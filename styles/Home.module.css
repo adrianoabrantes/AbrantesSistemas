@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(141, 201, 236);
 }
 
 .main {
@@ -14,12 +15,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .footer {
   width: 100%;
   height: 100px;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid #969696;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,32 +36,18 @@
   justify-content: center;
   align-items: center;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  color: white;
+  text-shadow: 2px 2px gray;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  width: 280px;
+  text-align: left;
+  margin-top: 0;
+  font-size: 11px;
 }
 
 .code {
@@ -119,4 +107,79 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+  animation-name: example;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+}
+.circle2 {
+  top: 17%;
+  left: 10%;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.circle3 {
+  bottom: 35%;
+  right: 13%;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.circle4 {
+  bottom: 25%;
+  left: 13%;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  background: white;
+  opacity: 30%;
+  position: absolute;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    transform: rotate(20deg);
+  }
+  25% {
+    background-color: yellow;
+    transform: rotate(20deg);
+  }
+  50% {
+    background-color: blue;
+    transform: rotate(20deg);
+  }
+  75% {
+    background-color: green;
+    transform: rotate(20deg);
+  }
+  100% {
+    background-color: red;
+    transform: rotate(20deg);
+  }
+}
+
+.triangle {
+  top: 40%;
+  left: 5%;
+}
+.img {
+  width: 70%;
 }

@@ -8,19 +8,21 @@ export default function Home() {
       <Head>
         <title>Abrantes Sistemas</title>
         <link rel="icon" href="/favicon.ico" />
+        
       </Head>
 
+        <div className={styles.circle1}></div>
+        <div className={styles.circle2}></div>
+        <div className={styles.circle3}></div>
+        <div className={styles.circle4}></div>
+        
       <main className={styles.main}>
-        <h1 className="title">
-          <Link href="/first-post">
-            <a>Abrantes Sistemas</a>
-          </Link>
-          <br/>
-        </h1>
+        <h1 className={styles.title}>Abrantes Sistemas</h1>
+        <h3 className={styles.description}>Desenvolvimento de Software</h3>
         <br/>
 
         <div className={styles.grid}>
-          <img src="/vscode.png" width="500vh"/>
+          <img className={styles.img} src="/vscode.png"/>
           
           <a className={styles.card}>
             <h3>Tecnologia e Inovação</h3>
@@ -32,6 +34,9 @@ export default function Home() {
             <p>Preços compativeis com o mercado.</p>
           </a>
         </div>
+      <div className>
+
+      </div>
       </main>
 
       <footer className={styles.footer}>
