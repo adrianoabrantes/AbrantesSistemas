@@ -109,7 +109,7 @@
   right: 13%;
   animation-duration: 18s;
   animation-iteration-count: infinite;
-  animation-name: example2;
+  animation-name: example;
 }
 
 .circle4 {
@@ -117,7 +117,7 @@
   left: 13%;
   animation-duration: 25s;
   animation-iteration-count: infinite;
-  animation-name: example2;
+  animation-name: example;
 }
 
 .circle1,
@@ -136,65 +136,18 @@
 @keyframes example {
   0% {
     background-color: red;
-    transform: rotate(20deg);
-    top: 5%;
-    right: 25%;
   }
   25% {
     background-color: yellow;
-    transform: rotate(20deg);
-    top: 25%;
-    right: 75%;
   }
   50% {
     background-color: blue;
-    transform: rotate(20deg);
-    top: 60%;
-    right: 35%;
   }
   75% {
     background-color: green;
-    transform: rotate(20deg);
-    top: 35%;
-    right: 60%;
   }
   100% {
     background-color: red;
-    transform: rotate(20deg);
-    top: 5%;
-    right: 25%;
-  }
-}
-@keyframes example2 {
-  0% {
-    background-color: red;
-    transform: rotate(20deg);
-    top: 5%;
-    left: 25%;
-  }
-  25% {
-    background-color: yellow;
-    transform: rotate(20deg);
-    top: 25%;
-    left: 65%;
-  }
-  50% {
-    background-color: blue;
-    transform: rotate(20deg);
-    top: 60%;
-    left: 35%;
-  }
-  75% {
-    background-color: green;
-    transform: rotate(20deg);
-    top: 35%;
-    left: 60%;
-  }
-  100% {
-    background-color: red;
-    transform: rotate(20deg);
-    top: 5%;
-    left: 25%;
   }
 }
 
@@ -224,14 +177,12 @@
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
     border-bottom: 120px solid yellow;
-    left: 35%;
   }
   50% {
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
     border-bottom: 120px solid blue;
     transform: rotate(360deg);
-    bottom: 20%;
   }
   75% {
     border-left: 120px solid transparent;
