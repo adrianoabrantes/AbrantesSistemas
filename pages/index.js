@@ -14,6 +14,7 @@ export default function Home() {
       <div className={styles.circle2}></div>
       <div className={styles.circle3}></div>
       <div className={styles.circle4}></div>
+      <div className={styles.triangle}></div>
 
       <main className={styles.main}>
         <div className={styles.top}>
