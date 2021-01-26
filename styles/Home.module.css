@@ -1,62 +1,43 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(141, 201, 236);
+  background-color: #6fb8da;
+  z-index: 0;
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 0;
+  margin-bottom: 50px;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
   border-top: 1px solid #969696;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }
 
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
+.top {
+  width: 100%;
+  height: 70px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #ffffff;
+  opacity: 70%;
 }
+
 .title {
-  color: white;
-  text-shadow: 2px 2px gray;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .description {
-  width: 280px;
-  text-align: left;
-  margin-top: 0;
+  margin-top: 0px;
   font-size: 11px;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -65,7 +46,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
+  z-index: 0;
 }
 
 .card {
@@ -98,11 +79,10 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-}
-
 @media (max-width: 600px) {
+  .top{
+    text-align: center;
+  }
   .grid {
     width: 100%;
     flex-direction: column;
@@ -112,31 +92,27 @@
 .circle1 {
   top: 5%;
   right: 15%;
-  animation-name: example;
-  animation-duration: 18s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
 }
 .circle2 {
   top: 17%;
   left: 10%;
-  animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 11s;
   animation-iteration-count: infinite;
 }
 
 .circle3 {
   bottom: 35%;
   right: 13%;
-  animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
 }
 
 .circle4 {
   bottom: 25%;
   left: 13%;
-  animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
 }
 
@@ -149,8 +125,9 @@
   border-radius: 50%;
   display: flex;
   background: white;
-  opacity: 30%;
   position: absolute;
+  opacity: 30%;
+  animation-name: example;
 }
 
 @keyframes example {
@@ -182,4 +159,31 @@
 }
 .img {
   width: 70%;
+}
+
+.navbar {
+  background-color: rgb(65, 65, 65);
+  height: 100%;
+  position: absolute;
+  margin-right: 5px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navitem {
+  color: white;
+  padding: 30px;
+  width: 260px;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  border-bottom: 1px solid rgb(77, 77, 77);
+}
+
+.navitem:hover {
+  background-color: rgb(94, 94, 94);
+  color: RGB(141, 201, 236);
+  cursor: pointer;
 }
