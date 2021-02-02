@@ -32,7 +32,7 @@ export default function Home() {
           </a>
 
           <a className={styles.card}>
-            <h3>Curso Benefício</h3>
+            <h3>Automatize seus processos</h3>
             <p>Preços compativeis com o mercado.</p>
           </a>
         </div>

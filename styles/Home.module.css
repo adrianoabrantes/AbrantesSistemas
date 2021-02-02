@@ -1,5 +1,5 @@
 .container {
-  background-color: #6fb8da;
+  background-color: #daecf5;
   z-index: 0;
 }
 
@@ -90,31 +90,31 @@
 }
 
 .circle1 {
-  top: 5%;
+  top: 3%;
   right: 15%;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-name: example;
 }
 .circle2 {
-  top: 17%;
-  left: 10%;
+  top: 20%;
+  left: 15%;
   animation-duration: 11s;
   animation-iteration-count: infinite;
   animation-name: example;
 }
 
 .circle3 {
-  bottom: 35%;
-  right: 13%;
+  top: 45%;
+  right: 15%;
   animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-name: example;
 }
 
 .circle4 {
-  bottom: 25%;
-  left: 13%;
+  top: 65%;
+  left: 15%;
   animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-name: example;
